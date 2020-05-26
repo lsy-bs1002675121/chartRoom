@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 400px;
+    border: 2px solid skyblue;
+    height: 600px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.warpper{
+    flex: 1;
+    overflow-y: scroll;
+    height: 100%;
+}
+.warpper ul{
+    list-style: none;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.warpper ul li{
+    width: 75%;
+    background: skyblue;
+    color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    line-height: 55px;
+    text-align: left;
+    padding: 0 15px;
+    white-space: normal;
+    word-break:break-all;
+  }
+  .warpper ul li:nth-child(2n){
+    align-self: flex-end;
+    background: #FFC0CB;
+  }
+  .msg{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+.msg .sendMsg{
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.msg .btn{
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: skyblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.name-box{
+    position: fixed;
+    left: 0;right: 0;top:0;bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .name-box input{
+    width: 80%;
+    height: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: 1px solid skyblue;
+    margin-bottom: 10px;
+  }
+  .name-box .btn-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .name-box .btn-box button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: skyblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
